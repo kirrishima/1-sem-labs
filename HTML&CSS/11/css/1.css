@@ -1,0 +1,174 @@
+@charset "UTF-8";
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.header-flex .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  background-color: aqua;
+  height: 5vw;
+}
+.header-flex .header-items {
+  display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  height: 2.5vw;
+  font-size: calc(5vh - 20%);
+  line-height: 5vh;
+  text-align: center;
+}
+.header-flex .header-items div {
+  background-color: aquamarine;
+  width: 13.75vw;
+}
+
+.aside-content .form input[type=text],
+.aside-content .form input[type=email] {
+  background-color: rgba(103, 41, 204, 0.5);
+}
+
+.content {
+  width: 68vw;
+  text-align: center;
+}
+.content .block-with-text {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.content .block-with-text div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  width: 21.6666666667vw;
+  background-color: aquamarine;
+}
+.content .header2,
+.content .header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  margin-top: 1vh;
+}
+.content .images-container {
+  display: flex;
+  justify-content: space-around;
+}
+.content .images-container img {
+  width: 13.6vw;
+  height: 13.6vw;
+}
+.content .images-container div {
+  margin-top: 1vh;
+}
+
+.aside-content {
+  margin-top: 1vh;
+  width: 28vw;
+}
+.aside-content .form {
+  background-color: aquamarine;
+  width: 100%;
+  margin: 0%;
+  padding-left: 5%;
+  padding-bottom: 2.5%;
+}
+.aside-content .form label {
+  display: inline-block;
+  width: 30%;
+  margin-top: 2%;
+  margin-right: 3%;
+}
+.aside-content .form input,
+.aside-content .form select {
+  margin-top: 2%;
+}
+.aside-content .form select {
+  vertical-align: top;
+  width: 21%;
+}
+.aside-content .form input[value=Регистрация] {
+  margin-top: 2%;
+  margin-left: 30%;
+}
+.aside-content .form input[type=date] {
+  width: 20%;
+}
+.aside-content .form label[id=male],
+.aside-content .form label[id=female] {
+  width: auto;
+  color: white;
+}
+.aside-content .form input[type=text],
+.aside-content .form input[type=email] {
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+  font-size: 1.2em;
+  height: 18px;
+  border-radius: 5px;
+  width: 46%;
+}
+.aside-content .form input[type=button] {
+  color: white;
+  background-color: navy;
+  box-shadow: 0 0 4px white;
+}
+.aside-content .aside-header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  margin-top: 1vh;
+  background-color: aquamarine;
+}
+.aside-content .aside-img-and-text1,
+.aside-content .aside-img-and-text2 {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-around;
+}
+.aside-content .aside-img-and-text1 img,
+.aside-content .aside-img-and-text2 img {
+  width: 9.3333333333vw;
+  height: 9.3333333333vw;
+}
+.aside-content .aside-img-and-text1 div,
+.aside-content .aside-img-and-text2 div {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  width: 18.6666666667vw;
+  background-color: aquamarine;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3vh;
+}
+
+.footer-container {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+.footer-container .footer {
+  height: 5vh;
+  background-color: aquamarine;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+}
+
+.header1, .header2, .aside-header1 {
+  font-size: 40px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="green.css" media="(max-width:1280px)" />
+    <style>
+      @import url("blue.css") (max-width: 768px);
+
+      .flex-item2 {
+        width: 30vw;
+      }
+
+      .header {
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: top;
+      }
+
+      .gallery {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .gallery img {
+        width: 256px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 480px) {
+        .caption {
+          color: red;
+        }
+      }
+
+      @media (max-width: 1280px) {
+        .flex-container div {
+          width: 90%;
+        }
+        .flex-container div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .flex-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .gallery {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .gallery img {
+          width: 90vw;
+        }
+        figcaption {
+          font-size: calc(20px + calc(2vw));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header"><h1>Заголовок</h1></div>
+      <div class="flex-container">
+        <div class="flex-item1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XXlw7TUxRVY?si=n2obJ1GLfW2_s8UG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eVZEwEQg4pg?si=ycYigaNp3DcVvzyW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <br /><iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/duWfUzXPgNc?si=lex6ozol_v3H3hZ3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex-item2">
+          Почему Flexbox? Долгое время единственными надёжными инструментами CSS вёрстки были такие способы как Float
+          (обтекание) и позиционирование. С их помощью сложно или невозможно достичь следующих простых требований к
+          макету: Вертикального выравнивания блока внутри родителя. Оформления всех детей контейнера так, чтобы они
+          распределили между собой доступную ширину/высоту, независимо от того, сколько ширины/высоты доступно. Сделать
+          все колонки в макете одинаковой высоты, даже если наполнение в них различно. Как вы увидите в последующих
+          разделах, flexbox значительно облегчает работу с макетами. Погружаемся! Разберём простой пример В этой статье
+          вы проработаете серию упражнений, которые помогут понять, как работает flexbox. Чтобы начать, скачайте на
+          компьютер стартовый файл — flexbox0.html с нашего Github репозитория — загрузите его в современном браузере
+          (Firefox или Chrome), а также в любимом редакторе кода. Также вы можете посмотреть его вживую.
+        </div>
+        <div class="flex-item3">
+          <audio
+            src="audio1/Bones - 404error (Softwareupdate1.0. 2016) (radio.lol).mp3"
+            width="100px"
+            height
+            controls="width=100px"
+          ></audio
+          ><br />
+          <audio src="audio1/Bones - TheRoadLessTraveled.mp3" controls="width=100px"></audio><br />
+          <audio src="audio1/BONES_-_RightClickSaveIt_(musmore.com).mp3" controls="width=100px"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <figure>
+        <img src="img3/1.png" alt="Photo 1" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/2.png" alt="Photo 2" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/3.png" alt="Photo 3" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/4.png" alt="Photo 4" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/5.png" alt="Photo 5" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/6.png" alt="Photo 6" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/7.png" alt="Photo 7" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+      <figure>
+        <img src="img3/8.png" alt="Photo 8" />
+        <figcaption class="caption">Captions</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

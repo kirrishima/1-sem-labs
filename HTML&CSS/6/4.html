@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+      .block1 {
+        background-image: linear-gradient(to bottom, blue, red);
+      }
+      .block2 {
+        background-image: repeating-linear-gradient(
+          45deg,
+          red,
+          red 7px,
+          blue 7px,
+          blue 14px
+        );
+      }
+      .block3 {
+        background-image: radial-gradient(circle, yellow, green);
+      }
+      .block4 {
+        background-image: repeating-radial-gradient(
+          circle,
+          green,
+          green 7px,
+          yellow 7px,
+          yellow 14px
+        );
+      }
+      .block5 {
+        background-image: radial-gradient(circle,yellow, green, transparent),
+        linear-gradient(to bottom, blue, magenta);
+      } 
+      .block6{
+        background-image: linear-gradient(to right, yellow 10px, green, transparent), linear-gradient(to bottom, black 15px, white 70px, blue 80px, magenta 90px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="block3"></div>
+    <div class="block4"></div>
+    <div class="block5"></div>
+    <div class="block6"></div>
+  </body>
+</html>

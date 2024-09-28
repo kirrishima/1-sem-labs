@@ -1,0 +1,42 @@
+$primary-background-color: aquamarine;
+$block-width: 68vw;
+$block-height: 20vh;
+$block-margin-top: 1vh;
+$header-height: 5vh;
+$images-container-width: 68vw / 5;
+$images-container-height: 68vw / 5;
+$aside-width: 28vw;
+$aside-header-height: $header-height * 0.8;
+$aside-img-width: $aside-width / 3;
+$aside-text-next-to-img-width: $aside-width / 1.5;
+$footer-height: 5vh;
+$footer-width: calc($block-width + $aside-width + 2vw);
+$global-font-size: 3vh;
+$header-font-size: 40px;
+//Form
+%text-input-background {
+    background-color: rgba(103, 41, 204, 0.5);
+  }
+  %text-input-text {
+    color: rgb(255, 255, 255);
+  }
+  $primary-background-color: aquamarine;
+  $text-input-box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+  $text-input-font-size: 1.2em;
+  $text-input-height: 18px;
+  $text-input-border-radius: 5px;
+  $form-width: 100%;
+  $form-margin: 0%;
+  $form-padding: 5%;
+
+  @function text-font-size($value){
+    @return $value * 0.8;
+  }
+  @function header-font-size($width){
+    @if($width < 1600px){
+      @return 70px;
+    }
+    @else{
+      @return 100px;
+    }
+  }

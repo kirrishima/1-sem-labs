@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 task lab 8</title>
+    <style>
+      .bstu {
+        background: url(facultet.png) no-repeat 0 0px;
+      }
+      .bstu:hover {
+        background-position: 0 0px;
+      }
+      .fit {
+        background: url(facultet.png) no-repeat 0 0px;
+      }
+      .fit:hover {
+        background-position: 0 -30px;
+      }
+      .xit {
+        background: url(facultet.png) no-repeat 0 0px;
+      }
+      .xit:hover {
+        background-position: 0 -60px;
+      }
+      .pim {
+        background: url(facultet.png) no-repeat 0 0px;
+      }
+      .pim:hover {
+        background-position: 0 -90px;
+      }
+
+      .facults > div {
+        margin: auto;
+        margin-left: 2vw;
+        border: solid 2px black;
+        width: 15vw;
+        display: inline-block;
+        line-height: 30px;
+        text-align: center;
+      }
+      .dropdown-content {
+        line-height: 30px;
+        position: absolute;
+        display: none;
+      }
+      .dropdown a {
+        text-decoration: none;
+        color: black;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      div.item {
+        width: 15vw;
+        border: solid 2px black;
+        margin-left: -2px;
+        margin-bottom: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="facults">
+      <div class="bstu">БГТУ</div>
+      <div class="fit">
+        <div class="dropdown">
+          <a href="https://belstu.by/fakultety/fit/" target="_blank"><div class="menu">ИТ</div></a>
+          <div class="dropdown-content">
+            <a href="https://isit.belstu.by/" target="_blank"><div class="item">Кафедра ИСиТ</div></a>
+            <a href="https://belstu.by/fakultety/fit/ivd/" target="_blank"><div class="item">Кафедра ИиВД</div></a>
+            <a href="https://belstu.by/fakultety/fit/pi/" target="_blank"> <div class="item">Кафедра ПИ</div></a>
+          </div>
+        </div>
+      </div>
+      <div class="pim">ПиМ</div>
+      <div class="xit">ХТиТ</div>
+    </div>
+  </body>
+</html>

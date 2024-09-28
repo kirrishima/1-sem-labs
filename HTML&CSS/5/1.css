@@ -1,0 +1,15 @@
+th, td {
+  padding: 5px;
+  border: solid 2px black;
+}
+
+table{
+  border-collapse: collapse;
+}
+tr:first-child {
+  background-color: #b69189; 
+}
+
+td:first-child {
+  background-color: #ebd781;
+}

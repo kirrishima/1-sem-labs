@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .header .menu-char{display: none; }
+      .flex-item2 {
+        width: 30vw;
+      }
+
+      .header {
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: top;
+      }
+  
+      @media (max-width: 480px) {
+        .header .menu-char{display: block;}
+
+        .flex-container div {
+          margin-bottom: 2vh;
+        }
+        .header{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 50px;
+        }
+        .flex-item2,
+        .flex-item1,
+        .flex-item3 {
+            font-size: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .flex-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        iframe {
+          width: 100%;
+        }
+        .flex-container div {
+            width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header"><div>Заголовок</div> <div class="menu-char">&#8801;</div></div>
+      <div class="flex-container">
+        <div class="flex-item1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/XXlw7TUxRVY?si=n2obJ1GLfW2_s8UG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eVZEwEQg4pg?si=ycYigaNp3DcVvzyW"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <br /><iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/duWfUzXPgNc?si=lex6ozol_v3H3hZ3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="flex-item2">
+          Почему Flexbox? Долгое время единственными надёжными инструментами CSS вёрстки были такие способы как Float
+          (обтекание) и позиционирование. С их помощью сложно или невозможно достичь следующих простых требований к
+          макету: Вертикального выравнивания блока внутри родителя. Оформления всех детей контейнера так, чтобы они
+          распределили между собой доступную ширину/высоту, независимо от того, сколько ширины/высоты доступно. Сделать
+          все колонки в макете одинаковой высоты, даже если наполнение в них различно. Как вы увидите в последующих
+          разделах, flexbox значительно облегчает работу с макетами. Погружаемся! Разберём простой пример В этой статье
+          вы проработаете серию упражнений, которые помогут понять, как работает flexbox. Чтобы начать, скачайте на
+          компьютер стартовый файл — flexbox0.html с нашего Github репозитория — загрузите его в современном браузере
+          (Firefox или Chrome), а также в любимом редакторе кода. Также вы можете посмотреть его вживую.
+        </div>
+        <div class="flex-item3">
+          <audio
+            src="audio1/Bones - 404error (Softwareupdate1.0. 2016) (radio.lol).mp3"
+            width="100px"
+            height
+            controls="width=100px"
+          ></audio
+          ><br />
+          <audio src="audio1/Bones - TheRoadLessTraveled.mp3" controls="width=100px"></audio><br />
+          <audio src="audio1/BONES_-_RightClickSaveIt_(musmore.com).mp3" controls="width=100px"></audio>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

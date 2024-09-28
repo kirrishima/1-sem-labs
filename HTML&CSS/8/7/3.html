@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>3</title>
+    <style>
+        input[type="button"]{
+            margin-left: 50px;
+            width: 200px;
+            height: 50px;
+        }
+        input[value="Голосуйте за"]:hover{
+            background-color: black;
+            color: white;
+        }
+        input[value="Валерия Абобу"]:hover{
+          background-color: white;
+          outline: solid 4px yellow;
+          border: solid 4px red;
+        }
+        input[value="Согласен"]:hover{
+          background-color: white;
+          border: none;
+          border-top: solid 4px green;
+          border-bottom: solid 4px green;
+        }
+        input[value="Да"]:hover{
+          background-color: white;
+          border: none;
+          border-left: solid 4px blue;
+          border-right: solid 4px blue;
+        }
+        input[value="Нет, я панк"]:hover{
+          background-image: radial-gradient(yellow, magenta, cyan);
+          border: none;
+          font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="header3">Выборы 2077</h1>
+    <form action="" >
+      <input type="button" value="Голосуйте за" />
+      <input type="button" value="Валерия Абобу" /><input type="button" value="Согласен" /><input
+        type="button"
+        value="Да"
+      /><input type="button" value="Нет, я панк" />
+    </form>
+  </body>
+</html>

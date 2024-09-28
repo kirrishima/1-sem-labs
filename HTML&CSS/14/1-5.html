@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @keyframes square {
+        0% {
+          stroke: transparent;
+          stroke-width: 10px;
+        }
+        100% {
+          stroke: black;
+        }
+      }
+
+      .colorChangeEllipse {
+        fill: green;
+      }
+
+      .colorChangeEllipse:active {
+        fill: red;
+      }
+
+      .animatedSquare {
+        animation: square 2s infinite;
+      }
+      @keyframes triangle {
+        0% {
+          fill: yellow;
+        }
+        50% {
+          fill: green;
+        }
+        100% {
+          fill: orange;
+        }
+      }
+      .gradientTriangle {
+        animation: triangle 2s infinite alternate;
+        fill: yellow;
+        stroke: transparent;
+        stroke-width: 10px;
+      }
+      .gradientTriangle:hover {
+        fill: black;
+        stroke: black;
+      }
+    </style>
+    <title>Lab 14 1</title>
+  </head>
+  <body>
+    <h1>Задание 1</h1>
+    <svg width="400" height="200">
+      <path
+        id="line"
+        d="M10 80 Q 95 10 180 80 T 350 80"
+        fill="transparent"
+        stroke="black"
+        stroke-width="2px"
+      />
+      <text font-size="36" fill="red">
+        <textPath href="#line" text-anchor="middle" startOffset="50%">текст</textPath>
+      </text>
+    </svg>
+    <h1>Задание 2</h1>
+    <svg height="400px" width="100%">
+      <circle cx="110px" r="100px" cy="110px" fill="blue" />
+      <rect
+        x="240px"
+        y="10px"
+        width="200px"
+        height="200px"
+        class="animatedSquare"
+        fill="red"
+      />
+      <!-- Изменения для эллипса -->
+      <ellipse cx="620px" cy="110px" rx="150px" ry="85px" class="colorChangeEllipse" />
+      <!-- Изменения для треугольника -->
+      <polygon class="gradientTriangle" points="1000,10 800,210 1200,210" />
+      <polyline
+        points="0,230 600,230 500,280 1200,280"
+        fill="transparent"
+        stroke="#8B008B"
+        stroke-width="5"
+      />
+    </svg>
+    <h1>Задание 3</h1>
+    <svg width="400" height="400">
+      <path
+        d="M200 10 L100 110 L175 110  M225 110 L300 110 M300 110 L200 10 Z "
+        fill="transparent"
+        stroke="#8B008B"
+      />
+      <path
+        d="M175 110 L75 220 M75 220 L175 220 Z M225 220 L325 220 M325 220 L225 110 Z"
+        fill="transparent"
+        stroke="#8B008B"
+      />
+      <path
+        d="M175 220 L175 270 M175 270 L225 270 M225 270 L225 220  Z"
+        fill="transparent"
+        stroke="#8B008B"
+      />
+    </svg>
+    <h1>Задание 4</h1>
+    <svg width="1200" height="300">
+      <defs>
+        <path
+          id="home"
+          d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"
+        />
+      </defs>
+      <use xlink:href="#home" transform="translate(50, 50) rotate(30)" />
+      <use xlink:href="#home" transform="translate(250, 50) scale(1.5)" />
+      <use xlink:href="#home" transform="translate(450, 50) skewX(45)" />
+      <use xlink:href="#home" transform="translate(650, 50) skewY(30)" />
+      <use xlink:href="#home" transform="translate(850, 50) translate(50, -20)" />
+    </svg>
+
+    <!-- Градиентная заливка для треугольника -->
+    <svg style="display: none">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color: green" />
+          <stop offset="100%" style="stop-color: orange" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </body>
+</html>

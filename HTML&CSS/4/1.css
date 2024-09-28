@@ -1,0 +1,57 @@
+.container > div {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+  margin: 10px;
+  text-transform: capitalize;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+.r {
+  border: 15px outset rgb(255, 0, 0);
+}
+.g {
+  border: 15px dashed rgb(0, 128, 0);
+}
+.b {
+  border: 15px dotted rgb(0, 0, 255);
+}
+.c {
+  border: 15px double rgb(0, 255, 255);
+}
+.m {
+  border: 15px groove rgb(255, 0, 255);
+}
+.y {
+  border: 15px inset rgb(255, 255, 0);
+}
+.k {
+  border: 15px solid rgb(0, 0, 0);
+}
+
+p span {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #FFA500;
+  border: 5px solid #FF4500;
+}
+
+.first {
+  width: 400px;
+  text-align: center;
+  border: solid #FF7F50;
+}
+
+.second {
+  border: 5px solid red;
+  border-radius: 20px/40px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.third {
+  border:  solid #FF6347;
+}

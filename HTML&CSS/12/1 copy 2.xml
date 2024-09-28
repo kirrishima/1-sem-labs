@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<bookstore>
+  <book>
+    <title>Learning XML</title>
+    <author>John Smith</author>
+    <genre>Programming</genre>
+    <price>29.99</price>
+  </book>
+  <book>
+  <title>The XML Chronicles</title>
+  <author>Michael Johnson</author>
+  <genre>Historical Programming</genre>
+  <price>19.99</price>
+</book>
+<book>
+  <title>XML Enigma</title>
+  <author>Alice Turner</author>
+  <genre>Mystery Programming</genre>
+  <price>27.99</price>
+</book>
+</bookstore>

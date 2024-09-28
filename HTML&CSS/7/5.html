@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5</title>
+    <style>
+      @keyframes slideshow {
+        0% {
+          background-image: url("img5/1.png");
+        }
+        25% {
+          background-image: url("img5/2.png");
+        }
+        50% {
+          background-image: url("img5/3.png");
+        }
+        75% {
+          background-image: url("img5/4.png");
+        }
+        100% {
+          background-image: url("img5/5.png");
+        }
+      }
+      #slideshow {
+        border-radius: 10px;
+        outline: solid 10px rgba(186, 85, 54, 0.9);
+        margin: auto;
+        margin-top: 200px;
+        width: 512px;
+        height: 512px;
+        animation-name: slideshow;
+        animation-duration: 5s;
+        /* animation-timing-function: steps(1);  */
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow"></div>
+  </body>
+</html>

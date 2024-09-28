@@ -1,0 +1,54 @@
+.border1 {
+  border-left: solid brown;
+  border-bottom: solid yellow;
+  border-right: solid darkblue;
+  border-top: solid orange;
+}
+
+.border2 {
+  border-left: solid #007ba7;
+  border-right: solid #007ba7;
+}
+
+.border3 {
+  border-top: solid rgb(229, 43, 80);
+  border-left: dotted blue;
+  border-right: dotted blue;
+  border-bottom: dotted blue;
+}
+
+.border4 {
+  border: 1px dotted orange;
+}
+
+.border5 {
+  border-top: 2px solid darkblue;
+  border-bottom: 2px solid darkblue;
+  border-left: 2px dotted maroon;
+  border-right: 2px dotted maroon;
+}
+
+.border6 {
+  border: 2px double #b3446c;
+}
+
+.border7 {
+  border-top: 1px dotted #808000;
+  border-bottom: 3px solid #ff7518;
+}
+
+.border8 {
+  border-left: 2px double #cc7722;
+  border-bottom: 2px double #cc7722;
+}
+
+.border9 {
+  border-right: ridge #b5a642;
+  border-top: ridge #b5a642;
+}
+
+.border10 {
+  border-left: 5px dotted rgb(0, 40, 0);
+  border-right: 5px dotted rgb(0, 40, 0);
+  border-bottom: 5px dotted rgb(0, 40, 0);
+}

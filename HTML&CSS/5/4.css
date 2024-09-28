@@ -1,0 +1,35 @@
+table {
+    border-spacing: 0;
+    margin: auto;
+    margin-top: 150px;  
+  }
+  
+  td {
+    text-align: center;
+    border-spacing: 0;
+    width: 50px;
+    height: 50px;
+    border: 0.1px solid black;
+  }
+  
+  tr:nth-child(2n) > td:nth-child(odd) {
+    background-color: black;
+  }
+  
+  tr:nth-child(2n + 1) > td:nth-child(even) {
+    background-color: black;
+  }
+  
+  tr:first-child > td, tr:last-child > td {
+    empty-cells: hide;
+    height: 25px;
+  }
+  
+  td:first-child, td:last-child {
+    width: 25px;
+  }
+  
+  td:not(:empty) {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgb(180, 178, 178) !important;
+  }

@@ -1,0 +1,7 @@
+@keyframes header {
+    0%{opacity: 0%;}
+    100%{opacity: 80%;}
+}
+h1{
+    animation: header 5s  infinite alternate;
+}

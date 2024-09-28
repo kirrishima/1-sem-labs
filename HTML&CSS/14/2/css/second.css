@@ -1,0 +1,14 @@
+body {
+  background-color: #bdb76b;
+}
+
+div h3 {
+  color: yellow;
+}
+div > h2 {
+  color: rgb(0, 250, 154);
+}
+
+#span {
+  text-decoration: line-through;
+}

@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: magenta;
+  font-family: "Monotype Corsiva";
+}
+
+/*Задание 2 */
+.first {
+  color: red;
+  font-family: "Times New Roman";
+  font-size: 18pt;
+}
+.second {
+  color: yellow;
+  font-family: "Times New Roman";
+  font-size: 20pt;
+}
+.third {
+  color: green;
+  font-family: "Times New Roman";
+  font-size: 22pt;
+}
+/* Задание 5*/
+table td, th{
+  color: red;
+}

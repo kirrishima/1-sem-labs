@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>4</title>
+    <style>
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      @keyframes anim1 {
+        0% {
+          transform: perspective(400px) rotateY(20deg);
+          left: 0;
+        }
+
+        50% {
+          left: 1450px;
+          transform: none;
+        }
+        100% {
+          left: 300px;
+        }
+      }
+      @keyframes anim2 {
+        0% {
+          transform: perspective(400px) rotateY(20deg);
+          left: 50px;
+        }
+
+        50% {
+          left: 1500px;
+          transform: none;
+        }
+        100% {
+          left: 700px;
+          filter: blur(10px);
+        }
+      }
+      @keyframes anim3 {
+        0% {
+          transform: perspective(400px) rotateY(20deg);
+          left: 100px;
+        }
+
+        50% {
+          left: 1550px;
+          transform: none;
+        }
+        100% {
+          left: 1100px;
+          filter: grayscale(1);
+        }
+      }
+      @keyframes anim4 {
+        0% {
+          transform: perspective(400px) rotateY(20deg);
+          left: 150px;
+        }
+
+        50% {
+          left: 1600px;
+          transform: none;
+        }
+        100% {
+          left: 1500px;
+          filter: invert(1);
+        }
+      }
+      .img1 {
+        
+        position: absolute;
+        animation-name: anim1;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .img2 {
+        position: absolute;
+        animation-name: anim2;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .img3 {
+        position: absolute;
+        animation-name: anim3;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .img4 {
+        position: absolute;
+        animation-name: anim4;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header4">Вот это анимация</h1>
+    <img src="img3/1.png" alt="" class="img1" />
+    <img src="img3/2.png" alt="" class="img2" />
+    <img src="img3/3.png" alt="" class="img3" />
+    <img src="img3/4.png" alt="" class="img4" />
+  </body>
+</html>

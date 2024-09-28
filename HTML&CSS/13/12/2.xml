@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="2.xsl"?>
+<assessment>
+  <student>
+    <name>Иванов Иван</name>
+    <subject>
+      <name>Математика</name>
+      <grade>7</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>5</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Петров Петр</name>
+    <subject>
+      <name>Математика</name>
+      <grade>9</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>3</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Сидорова Анна</name>
+    <subject>
+      <name>Математика</name>
+      <grade>6</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>8</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Козлов Дмитрий</name>
+    <subject>
+      <name>Математика</name>
+      <grade>4</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>9</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Григорьева Мария</name>
+    <subject>
+      <name>Математика</name>
+      <grade>8</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>2</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Алексеев Алексей</name>
+    <subject>
+      <name>Математика</name>
+      <grade>5</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>7</grade>
+    </subject>
+  </student>
+  <student>
+    <name>Петров Петр</name>
+    <subject>
+      <name>Математика</name>
+      <grade>9</grade>
+    </subject>
+    <subject>
+      <name>Литература</name>
+      <grade>3</grade>
+    </subject>
+  </student>
+</assessment>

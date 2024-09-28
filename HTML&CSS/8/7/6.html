@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>6</title>
+    <style>
+              @keyframes moveRight {
+        0% {
+            left: 0;    
+        }
+        100% {
+            left: 200px;
+        }
+      }
+      @keyframes moveRightWithDestortion {
+        0% {
+            left: 0;
+            transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateY(0deg);
+        }
+        100% {
+            left: 1000px;
+            transform: perspective(350px) rotateX(39deg);
+            transform: perspective(250px) rotateY(-80deg);
+        }
+      }
+
+      @keyframes moveLeftToRight {
+        0% {
+            left: -400px;
+            
+        }
+        100% {
+            left: 2000px; 
+        }
+      }
+      @keyframes moveDown {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(50px);
+        }
+      }
+
+      @keyframes square {
+        0% {
+          left: 0;
+          top: 0;
+        }
+        25% {
+          left: 200px;
+          top: 0;
+        }
+        50% {
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          left: 0;
+          top: 200px;
+        }
+        100% {
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .img1,
+      .img2,
+      .img3,
+      .img4,
+      .img5 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+      }
+
+      .img1 {
+        animation: moveRight 10s infinite linear;
+        animation-direction: alternate;
+      }
+
+      .img2 {
+        animation: moveRightWithDestortion 10s infinite linear;
+        animation-direction: alternate;
+      }
+
+      .img3 {
+        animation: moveLeftToRight 10s infinite linear;
+        animation-direction: alternate;
+      }
+
+      .img4 {
+        animation: moveDown 10s infinite linear;
+        animation-direction: alternate;
+      }
+
+      .img5 {
+        animation: square 10s infinite linear;
+        animation-direction: alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header6">Расколбас полный</h1>
+    <img src="img6/1.png" alt="" class="img1" /><img
+      src="img6/2.png"
+      alt=""
+      class="img2"
+    /><img src="img6/3.png" alt="" class="img3" /><img
+      src="img6/4.png"
+      alt=""
+      class="img4"
+    /><img src="img6/5.png" alt="" class="img5" />
+  </body>
+</html>

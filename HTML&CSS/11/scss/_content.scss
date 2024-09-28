@@ -1,0 +1,158 @@
+@import "_vars";
+
+@mixin centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+.content {
+  width: $block-width;
+  text-align: center;
+
+  .block-with-text {
+    font-size: text-font-size($header-font-size);
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      @include centered-container;
+      margin-top: $block-margin-top;
+      // height: $block-height;
+      width: calc(calc($block-width / 3) - 1vw);
+      background-color: $primary-background-color;
+    }
+  }
+
+  .header2,
+  .header1 {
+    @include centered-container;
+    background-color: $primary-background-color;
+    margin-top: $block-margin-top;
+    // height: $header-height;
+  }
+
+  .images-container {
+    @include flex-around;
+
+    img {
+      width: $images-container-width;
+      height: $images-container-height;
+    }
+
+    div {
+      margin-top: $block-margin-top;
+    }
+  }
+}
+
+.aside-content {
+  margin-top: $block-margin-top;
+  width: $aside-width;
+
+  .form {
+
+    
+    background-color: $primary-background-color;
+    width: $form-width;
+    margin: $form-margin;
+    padding-left: $form-padding;
+    padding-bottom: $form-padding / 2;
+
+    label {
+      display: inline-block;
+      width: 30%;
+      margin-top: 2%;
+      margin-right: 3%;
+    }
+
+    input,
+    select {
+      margin-top: 2%;
+    }
+
+    select {
+      vertical-align: top;
+      width: 21%;
+    }
+
+    input[value="Регистрация"] {
+      margin-top: 2%;
+      margin-left: 30%;
+    }
+
+    input[type="date"] {
+      width: 20%;
+    }
+
+    label[id="male"],
+    label[id="female"] {
+      width: auto;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      @extend %text-input-background;
+      box-shadow: $text-input-box-shadow;
+      font-size: $text-input-font-size;
+      height: $text-input-height;
+      border-radius: $text-input-border-radius;
+      width: 46%;
+    }
+
+    input[type="button"] {
+      color: white;
+      background-color: navy;
+      box-shadow: 0 0 4px white;
+    }
+  }
+
+  .aside-header1 {
+    @include centered-container;
+    height: $aside-header-height;
+    margin-top: $block-margin-top;
+    background-color: $primary-background-color;
+  }
+  .aside-img-and-text1,
+  .aside-img-and-text2 {
+    margin-top: $block-margin-top;
+    @include flex-around;
+    img {
+      width: $aside-img-width;
+      height: $aside-img-width;
+    }
+    div {
+      font-size: text-font-size($header-font-size);
+      @include centered-container;
+      margin-top: $block-margin-top;
+      width: $aside-text-next-to-img-width;
+      background-color: $primary-background-color;
+    }
+  }
+}
+
+.container {
+  @include flex-around;
+  font-size: $global-font-size;
+}
+
+.footer-container {
+  font-size: text-font-size($header-font-size);
+  display: flex;
+  justify-content: center;
+  margin-top: $block-margin-top;
+  .footer {
+    height: $footer-height;
+    background-color: $primary-background-color;
+    width: $footer-width;
+    @include centered-container;
+    font-size: $global-font-size;
+  }
+}
+.header1, .header2, .aside-header1 {
+font-size: $header-font-size;
+}

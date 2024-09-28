@@ -1,0 +1,29 @@
+bookstore {
+  display: table;
+  border-collapse: collapse;
+}
+book {
+  display: table-row;
+}
+
+title,
+author,
+price,
+genre {
+  display: table-cell;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+title {
+  color: red;
+}
+
+author {
+  color: blue;
+}
+
+price,
+genre {
+  color: green;
+}

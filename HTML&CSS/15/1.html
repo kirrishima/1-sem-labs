@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .container div {
+        position: relative;
+        display: inline-block;
+      }
+      .container div img {
+        width: 20vw;
+        height: 20vw;
+      }
+      .img1 {
+        position: relative;
+      }
+      .img2 {
+        box-sizing: border-box;
+      }
+      .container div .description {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: xx-large;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img1-div">
+        <img src="img1/1.png" alt="" class="img1" />
+        <div class="description">
+          Многострочное описание изображения 1, ну оно не совсем многострочное, но какое
+          есть. описание не выбирают если что
+        </div>
+      </div>
+      <div class="img2-div"><img src="img1/2.png" class="img2" alt="" /></div>
+      <div class="img"><img src="img1/3.png" alt="" /></div>
+      <div class="img"><img src="img1/4.png" alt="" class="img4" /></div>
+    </div>
+
+    <script>
+        var par = document.getElementsByClassName('container')[0];
+        var cn = par.childNodes;
+        console.log(cn);
+
+      // отображение описания
+      var imgFirst = document.querySelector(".img1");
+      var imgFirstParentDiv = document.querySelector(".img1-div");
+      var description = imgFirstParentDiv.querySelector(".description");
+
+      imgFirst.addEventListener("mouseover", function () {
+        description.style.display = "block";
+      });
+
+      imgFirst.addEventListener("mouseout", function () {
+        description.style.display = "none";
+      });
+
+      //при щелчке мыши на одном из фото должна появляться граница толщиной 10px сплошного красного фото.
+      var imgSecond = document.querySelector(".img2");
+      var imgFirstParentDiv = document.querySelector(".img2-div");
+
+      imgSecond.addEventListener("click", function () {
+        imgSecond.style.border = "10px red solid";
+
+        setTimeout(function () {
+          imgSecond.style.border = "";
+        }, 300);
+      });
+
+      // замена картинки
+      var imgLast = document.querySelector(".img4");
+
+      imgLast.addEventListener("mouseover", function () {
+        imgLast.setAttribute("src", "img1/5.png");
+      });
+
+      imgLast.addEventListener("mouseout", function () {
+        imgLast.setAttribute("src", "img1/4.png");
+      });
+    </script>
+  </body>
+</html>

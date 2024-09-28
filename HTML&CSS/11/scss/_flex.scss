@@ -1,0 +1,25 @@
+@mixin centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+  .logo {
+    @include centered-container;
+    width: 15vw;
+    background-color: aqua;
+    height: 5vw;
+  }
+  .header-items {
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    height: 2.5vw;
+    font-size: calc(calc(5vh) - 20%);
+    line-height: calc(calc(5vh));
+    text-align: center;
+    div {background-color: aquamarine; width:calc(55vw / 4); }
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3_2 task lb 9</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 6vw 73.6vw 18.6vw;
+        grid-template-rows: 10vh 80vh 6.5vh;
+        grid-gap: 0.4vw;
+        grid-template-areas:
+          "y y y"
+          "x w x2"
+          "y2 y2 y2";
+      }
+
+      .grid div {
+        border-radius: 1vh;
+        background-color: #cac8c8; /* Светло-серый цвет фона */
+        color: #333333; /* Темно-серый цвет текста */
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff; /* Синий цвет ссылок */
+        font-size: 3vh;
+      }
+
+      div ul {
+        list-style: none;
+        margin-top: 1vh;
+        padding-left: 1vh;
+        text-align: left;
+      }
+
+      div ul > li {
+        padding-bottom: 3vh;
+      }
+      .grid div:nth-child(1) {
+        grid-area: x;
+      }
+      .grid div:nth-child(2) {
+        grid-area: y;
+      }
+      .grid div:nth-child(3) {
+        grid-area: w;
+      }
+      .grid div:nth-child(4) {
+        grid-area: x2;
+      }
+      .grid div:nth-child(5) {
+        grid-area: y2;
+      }
+      div::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+          <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+          <li>
+            <a
+              href="https://www.w3.org/Style/CSS/Overview.en.html#:~:text=What%20is%20CSS%3F,from%20the%20CSS%20working%20group."
+              >CSS</a
+            >
+          </li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+          <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+          <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a></li>
+        </ul>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <h1 style="font-size: 5vh">В этой статье содержится информация по HTML и CSS</h1>
+      </div>
+      <div style="font-size: 3vh; padding: 2vh; text-align: left">
+        CSS Grid Layout - это мощный инструмент для создания разметки в CSS1. <br />Это двумерная система, которая может
+        обрабатывать строки и столбцы1. Вот некоторые основные понятия и свойства, связанные с CSS Grid Layout:
+        <br />Создание грид-контейнера: Мы создаем грид-контейнер, объявляя display: grid или display: inline-grid на
+        элементе. Все прямые потомки этого элемента становятся элементами сетки2. <br />Определение сетки:
+        grid-template-rows и grid-template-columns используются для задания количества строк и столбцов3.
+        grid-template-areas используется для определения именованных областей3. grid-template - это сокращенная запись
+        для явного объявления сетки3. <br />Размещение элементов: Вы можете размещать элементы в заданном месте на
+        гриде, используя номера строк, имена или путем привязки к области грида2. Управление выравниванием: Грид
+        содержит механизм выравнивания, таким образом мы можем контролировать, как элементы выравниваются после
+        размещения в области сетки и как выравнивается вся сетка2. <br />
+        Управление перекрывающимся контентом: В ячейку или область грида может быть помещено несколько элементов; эти
+        элементы могут частично перекрывать друг друга. Такое наложение можно контролировать с помощью свойства z-index.
+        <br />Неявная сетка: Если элементы, которые вы хотите разместить в гриде, превышают количество явно объявленных
+        строк или столбцов, CSS Grid автоматически создает дополнительные строки или столбцы для их размещения3
+      </div>
+      <div style="overflow: scroll; font-size: 2.5vh; text-align: left; padding: 2vh">
+        CSS3: CSS3 представляет собой последнюю версию каскадных таблиц стилей (CSS), которая включает в себя множество
+        новых функций и улучшений по сравнению с предыдущими версиями1. Одной из ключевых особенностей CSS3 является
+        поддержка анимаций. С помощью ключевых кадров (keyframes) и переходов (transitions) разработчики могут создавать
+        сложные анимации прямо в CSS, без необходимости использования JavaScript1. HTML5: HTML5 - это пятая версия HTML,
+        которая представляет собой стандарт для структурирования и представления содержимого в Интернете2. HTML5
+        включает в себя множество новых семантических элементов, таких как &lt;section&gt;, &lt;article&gt;,
+        &lt;header&gt; и &lt;nav&gt;, которые обогащают семантическое содержимое документа3. HTML5 также предлагает
+        улучшенную поддержку мультимедиа с помощью элементов &lt;video&gt; и &lt;audio&gt;, а также поддержку SVG и
+        математических формул3. HTML5 представляет собой набор технологий для разработки сайтов и веб-приложений,
+        включая программные интерфейсы (API) для передачи видео и звука, для чатов, в том числе видеочатов через
+        браузер, и многих других интерактивных функций.
+      </div>
+      <div style="font-size: 2vh; display: flex; justify-content: center; align-items: center">
+        сайт создан потому что гладиолус ©Конфуций
+      </div>
+    </div>
+  </body>
+</html>

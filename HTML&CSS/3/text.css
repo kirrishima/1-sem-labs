@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat.woff") format("woff");
+  src: url("fonts/Caveat.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Exo2";
+  src: url("fonts/Exo2.woff") format("woff");
+  src: url("fonts/Exo2.svg") format("svg");
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("fonts/Comfortaa.woff") format("woff");
+  src: url("fonts/Comfortaa.svg") format("svg");
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: "Caveat";
+  text-shadow: 4px 4px 4px black;
+}
+
+h2 {
+  font-family: "Exo2";
+  margin-bottom: 1.2em;
+  margin-top: 0.2rem;
+  text-indent: 25px;
+  text-align: left;
+}
+
+p {
+  text-indent: 25px;
+  text-align: justify;
+  margin: 0;
+  line-height: 200%;
+  font-size: 20px;
+}
+p::first-letter {
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+  background-color: hsla(275, 100%, 10%, 1);
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+h2.last {
+  margin-bottom: 0;
+}
+ol li {
+  color: black;
+  list-style-type: none;
+  counter-increment: item;
+}
+ol li:before {
+  content: counter(item, upper-roman) ".";
+  color: blue;
+  font-size: 20px;
+}

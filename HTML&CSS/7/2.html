@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <title>2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        padding-top: 100px;
+        width: 300px;
+        height: 300px;
+        padding-left: 100px;
+      }
+      .img1 {
+        transform: perspective(200px) rotateX(15deg);
+      }
+      .img2 {
+        transform: perspective(400px) rotateY(20deg);
+      }
+      .img3 {
+        transform: perspective(200px) rotateX(15deg);
+      }
+      .img4 {
+        transform: perspective(400px) rotateY(-20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Вот это их перекосило</h1>
+    <div>
+      <img src="img2/1.png" alt="" class="img1" /><img
+        src="img2/2.png"
+        alt=""
+        class="img2"
+      /><img src="img2/3.png" alt="" class="img3" /><img
+        src="img2/4.png"
+        alt=""
+        class="img4"
+      />
+    </div>
+  </body>
+</html>
